@@ -11,11 +11,10 @@
 #   end
 # end
 
-13.times do |i|
+3.times do |i|
   Question.create(q_text: "Dummy##{i}",pre_req_ans: nil)
-  n = 3
-  n.times do |j|
-    Answer.create(question_id: i,a_text: "ans#{j}")
+  3.times do |j|
+    i.Answer.create(a_text: "ans#{j}")
   end 
 end
 

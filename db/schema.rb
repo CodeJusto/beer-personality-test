@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,11 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321144528) do
+ActiveRecord::Schema.define(version: 20160519200532) do
 
-  create_table "users", force: true do |t|
+  create_table "answers", force: :cascade do |t|
+    t.integer "question_id"
+    t.string  "a_text"
+  end
+
+  create_table "beer", force: :cascade do |t|
+    t.integer "answer_id"
+    t.string  "name"
+    t.string  "adjective"
+    t.string  "description"
+    t.string  "beer_img"
+    t.string  "brew_name"
+    t.string  "brew_add"
+    t.string  "brew_img"
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.string  "q_text"
+    t.integer "pre_req_ans"
+  end
+
+  create_table "user_answers", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "answer_id"
+  end
+
+  create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "email"
   end
 
 end

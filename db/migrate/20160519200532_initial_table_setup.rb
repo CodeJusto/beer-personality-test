@@ -16,6 +16,7 @@ class InitialTableSetup < ActiveRecord::Migration
     end
 
     create_table :answers do |t|
+      t.references :question
       t.string :a_text
     end
 

@@ -1,7 +1,7 @@
 require_relative '../helper'
 require_relative 'user_answer'
 
-class Question < Activerecord::Base
+class Question < ActiveRecord::Base
 
   has_many :answers
   has_many :user_answers
@@ -13,8 +13,10 @@ class Question < Activerecord::Base
       loop do 
         q = random_question
         # condition_satisfied? = check(q)
-      until acceptable_question?(q)
-      q
+          until acceptable_question?(q)
+          q
+          end
+      end
     end
   end
 
@@ -43,4 +45,3 @@ class Question < Activerecord::Base
   end
 
 end
-

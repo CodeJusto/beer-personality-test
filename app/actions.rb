@@ -24,7 +24,6 @@ end
 
 get '/quiz' do
   @question = Question.generate(current_user)
-  # binding.pry
   if @question 
     @answers = @question.answers.all
     erb :questionnaire
@@ -42,8 +41,8 @@ post '/update_user_answers' do
 end
 
 get '/generate_results' do
-  # @beer = find_by (ans_id: current_user.user_answers.answer_id)
-  # Beer.joins(:user_answer,:answer, :user).where(:'user.id' => current_user.id)
-  @beer = Beer.joins(:user_answers, :answers, :users).where(users: {id: current_user.id})
+  @beer = Beer.find_by("answer_id IN (SELECT b.answer_id FROM beers AS b 
+                      INNER JOIN answers AS a ON b.answer_id=a.id 
+                      INNER JOIN user_answers AS ua ON ua.answer_id=a.id)")
   erb :result
 end

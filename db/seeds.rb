@@ -37,21 +37,56 @@ answer_3 = Answer.create(a_text: "Other", question_id: pre_req_question.id)
 
 decider_1 = Question.new(q_text: "What ale do you like?", pre_req_ans: answer_1.id)
 decider_1.save
-Answer.create(a_text: "Ale 1", question_id: decider_1.id)
+a1 = Answer.create(a_text: "Ale 1", question_id: decider_1.id)
 Answer.create(a_text: "Ale 2", question_id: decider_1.id)
 Answer.create(a_text: "Ale 3", question_id: decider_1.id)
 Answer.create(a_text: "Ale 4", question_id: decider_1.id)
 
 decider_2 = Question.create(q_text: "What lager do you like?", pre_req_ans: answer_2.id)
 decider_2.save
-Answer.create(a_text: "Lager 1", question_id: decider_2.id)
+a2 = Answer.create(a_text: "Lager 1", question_id: decider_2.id)
 Answer.create(a_text: "Lager 2", question_id: decider_2.id)
 Answer.create(a_text: "Lager 3", question_id: decider_2.id)
 Answer.create(a_text: "Lager 4", question_id: decider_2.id)
 
 decider_3 = Question.create(q_text: "What lager do you like?", pre_req_ans: answer_3.id)
 decider_3.save
-Answer.create(a_text: "Other 1", question_id: decider_3.id)
+a3 = Answer.create(a_text: "Other 1", question_id: decider_3.id)
 Answer.create(a_text: "Other 2", question_id: decider_3.id)
 Answer.create(a_text: "Other 3", question_id: decider_3.id)
 Answer.create(a_text: "Other 4", question_id: decider_3.id)
+
+
+Beer.create(answer_id: a1.id, 
+            name: "Ale 1", 
+            adjective: "Wacko", 
+            description: "You are wacky", 
+            beer_img: "placeholder", 
+            brew_name: "granville island",
+            brew_add: "1111",
+            brew_img: "placeholder"
+            ) 
+
+Beer.create(answer_id: a2.id, 
+            name: "Lager 1", 
+            adjective: "Wacko", 
+            description: "You are wacky", 
+            beer_img: "placeholder", 
+            brew_name: "granville island",
+            brew_add: "1111",
+            brew_img: "placeholder"
+            ) 
+
+Beer.create(answer_id: a3.id, 
+            name: "Other 1", 
+            adjective: "Wacko", 
+            description: "You are wacky", 
+            beer_img: "placeholder", 
+            brew_name: "granville island",
+            brew_add: "1111",
+            brew_img: "placeholder"
+            ) 
+
+
+
+

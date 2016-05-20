@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160519200532) do
     t.string  "a_text"
   end
 
-  create_table "beer", force: :cascade do |t|
+  create_table "beers", force: :cascade do |t|
     t.integer "answer_id"
     t.string  "name"
     t.string  "adjective"

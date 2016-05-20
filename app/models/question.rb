@@ -53,23 +53,6 @@ class Question < ActiveRecord::Base
           WHERE ua.user_id = ?)", @@user).map {|x|x}
     puts unanswered_questions.map{|x|x.id}.sort
     return unanswered_questions.sample
-
-    # loop do
-    #   # num = rand(1..17)
-    #   # selected_question = Question.find(num)
-
-    #   selected_question = unanswered_questions.sample
-
-    #   # Get all questions that qualify that I have not answered
-
-    #   # Questions.joins(:answers, :user_answers, :users).where 
-    #   # test_array = Question.find(num).answers.all
-    #   # user_array = @@user.user_answers.all
-    #   # test_array.map do |x|
-    #   #   user_array.include?(x)
-    #   # end
-    # break 
-    # end
   end
 
   def self.acceptable_question?(q)
@@ -81,19 +64,9 @@ class Question < ActiveRecord::Base
     else
       false
     end
-
-    # case pre_req
-    #   when nil
-    #     true
-    #   when condition_met(pre_req)
-    #     true
-    #   else
-    #     false
-    # end
   end
 
   def self.condition_met(pre_req)
-    # binding.pry
     puts @@user.user_answers.where(answer_id: pre_req).length
     @@user.user_answers.where(answer_id: pre_req).length > 0
   end

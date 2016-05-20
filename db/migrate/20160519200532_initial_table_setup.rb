@@ -19,7 +19,7 @@ class InitialTableSetup < ActiveRecord::Migration
       t.string :a_text
     end
 
-    create_table :beer do |t|
+    create_table :beers do |t|
       t.references :answer
       t.string :name
       t.string :adjective

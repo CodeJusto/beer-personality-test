@@ -33,9 +33,6 @@ class Question < ActiveRecord::Base
     else  
       loop do 
         q = random_question
-        # binding.pry
-        # binding.pry
-        # condition_satisfied? = check(q)
       break if acceptable_question?(q)
         # binding.pry
       end
@@ -50,8 +47,8 @@ class Question < ActiveRecord::Base
       "id NOT IN (SELECT q.id FROM questions q 
           INNER JOIN answers a on a.question_id = q.id 
           INNER JOIN user_answers ua on ua.answer_id = a.id 
-          WHERE ua.user_id = ?)", @@user).map {|x|x}
-    puts unanswered_questions.map{|x|x.id}.sort
+          WHERE ua.user_id = ?)", @@user.id).map {|x|x}
+    puts unanswered_questions.map{|x|x.id}.sort # DEBUG
     return unanswered_questions.sample
   end
 
@@ -67,7 +64,7 @@ class Question < ActiveRecord::Base
   end
 
   def self.condition_met(pre_req)
-    puts @@user.user_answers.where(answer_id: pre_req).length
+    puts @@user.user_answers.where(answer_id: pre_req).length # DEBUG
     @@user.user_answers.where(answer_id: pre_req).length > 0
   end
 

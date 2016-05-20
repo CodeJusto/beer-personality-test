@@ -45,7 +45,6 @@ ale_array = []
 end
 
 decider_2 = Question.create(q_text: "What lager do you like?", pre_req_ans: answer_2.id)
-decider_2.save
 
 lager_array = []
 4.times do |x|
@@ -53,7 +52,7 @@ lager_array = []
 end
 
 decider_3 = Question.create(q_text: "What do you like?", pre_req_ans: answer_3.id)
-decider_3.save
+# decider_3.save
 
 other_array = []
 4.times do |x|

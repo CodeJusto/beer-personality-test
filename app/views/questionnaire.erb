@@ -5,7 +5,6 @@
 <div>
   <form method="post" action='/update_user_answers'>
     <input type="hidden" name="q_id" value='<%@question.id%>'>
-      <%=answer.a_text%>
     </input>
     <% @answers.each do |answer| %>
       <div>

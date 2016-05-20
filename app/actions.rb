@@ -24,14 +24,14 @@ end
 
 post '/update_user_answers' do
   User_answer.create(
-    user_id: current_user.id
-    answer_id: params[:option]
+    user_id: current_user.id,
+    answer_id: params[:option],
     question_id: params[:q_id]
     )
   redirect '/quiz'
 end
 
-get '/generate_results'
+get '/generate_results' do
   # @beer = find_by (ans_id: current_user.user_answers.answer_id)
   # Beer.joins(:user_answer,:answer, :user).where(:'user.id' => current_user.id)
   Beer.joins(:user_answers, :answers, :users).where(users: {id: current_user.id})

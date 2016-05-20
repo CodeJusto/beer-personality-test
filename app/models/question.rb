@@ -34,8 +34,10 @@ class Question < ActiveRecord::Base
       loop do 
         q = random_question
         # binding.pry
+        # binding.pry
         # condition_satisfied? = check(q)
       break if acceptable_question?(q)
+        # binding.pry
       end
     end
     q
@@ -71,19 +73,28 @@ class Question < ActiveRecord::Base
   end
 
   def self.acceptable_question?(q)
-
     pre_req = q.pre_req_ans
-    case pre_req
-      when nil
-        true
-      when condition_met(pre_req)
-        true
-      else
-        false
+    if pre_req.nil?
+      true
+    elsif condition_met(pre_req)
+      true
+    else
+      false
     end
+
+    # case pre_req
+    #   when nil
+    #     true
+    #   when condition_met(pre_req)
+    #     true
+    #   else
+    #     false
+    # end
   end
 
   def self.condition_met(pre_req)
+    # binding.pry
+    puts @@user.user_answers.where(answer_id: pre_req).length
     @@user.user_answers.where(answer_id: pre_req).length > 0
   end
 

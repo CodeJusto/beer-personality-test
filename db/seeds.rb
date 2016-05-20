@@ -10,13 +10,24 @@
 #     question.answers.create(a_text: "Answer!" )
 #   end
 # end
+# 3.times do |i|
+#   created_question = Question.create(q_text: "Dummy##{i}",pre_req_ans: nil)
+#   3.times do |j|
+#     Answer.create(question_id: a_text: "ans#{j}")
+#   end 
+# end
 
-3.times do |i|
-  Question.create(q_text: "Dummy##{i}",pre_req_ans: nil)
-  3.times do |j|
-    i.Answer.create(a_text: "ans#{j}")
-  end 
-end
+q1 = Question.create(q_text: "Dummy 1", pre_req_ans: nil)
+Answer.create(a_text: "Answer 1", question_id: q1.id)
+Answer.create(a_text: "Answer 2", question_id: q1.id)
+
+q2 = Question.create(q_text: "Dummy 2", pre_req_ans: nil)
+Answer.create(a_text: "Answer 1", question_id: q2.id)
+Answer.create(a_text: "Answer 1", question_id: q2.id)
+
+q3 = Question.create(q_text: "Dummy 3", pre_req_ans: nil)
+Answer.create(a_text: "Answer 1", question_id: q3.id)
+Answer.create(a_text: "Answer 1", question_id: q3.id)
 
 pre_req_question = Question.new(q_text: "What beer do you prefer?")
 pre_req_question.save

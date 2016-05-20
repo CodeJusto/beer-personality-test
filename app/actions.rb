@@ -24,7 +24,8 @@ end
 
 get '/quiz' do
   @question = Question.generate(current_user)
-  if  @question 
+  # binding.pry
+  if @question 
     @answers = @question.answers.all
     erb :questionnaire
   else

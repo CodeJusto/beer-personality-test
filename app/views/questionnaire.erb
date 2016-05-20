@@ -4,11 +4,11 @@
 
 <div>
   <form method="post" action='/update_user_answers'>
-    <input type="hidden" name="q_id" value='<%@question.id%>'>
+    <input type="hidden" name="q_id" value='<%=@question.id%>'>
     </input>
     <% @answers.each do |answer| %>
       <div>
-        <input type="radio" name="option" value='<%answer.id%>'>
+        <input type="radio" name="option" value='<%=answer.id%>'>
           <%=answer.a_text%>
         </input>
       </div>

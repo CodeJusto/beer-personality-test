@@ -24,8 +24,9 @@ end
 
 get '/quiz' do
   @question = Question.generate(current_user)
-  if  @question 
+  if @question 
     @answers = @question.answers.all
+    # @progress += 1
     erb :questionnaire
   else
     redirect '/generate_results'
@@ -41,8 +42,12 @@ post '/update_user_answers' do
 end
 
 get '/generate_results' do
-  # @beer = find_by (ans_id: current_user.user_answers.answer_id)
-  # Beer.joins(:user_answer,:answer, :user).where(:'user.id' => current_user.id)
-  Beer.joins(:user_answers, :answers, :users).where(users: {id: current_user.id})
-  erb '/result'
+  # super_user = current_user
+  @beer = Beer.find_by("answer_id IN (SELECT b.answer_id FROM beers AS b 
+                      INNER JOIN answers AS a ON b.answer_id=a.id 
+                      INNER JOIN user_answers AS ua ON ua.answer_id=a.id
+                      INNER JOIN users AS u ON ua.user_id=u.id
+                      WHERE u.id=?)", current_user.id)
+  # binding.pry
+  erb :result
 end

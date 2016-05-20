@@ -5,9 +5,9 @@ class Answer < ActiveRecord::Base
   has_one :beer
 
 
-  def self.related(question)
-    question.answers.all
-  end
+  # def self.related(question)
+  #   question.answers.all
+  # end
 
   
 end

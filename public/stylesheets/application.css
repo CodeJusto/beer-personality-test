@@ -1,0 +1,20 @@
+.blue {
+  background-color: #0000FF;
+}
+
+.jumbo-image {
+  text-align:center;
+  margin:auto;
+}
+.homediv {
+  width:200px;
+}
+
+.background {
+  background-color: #000000;
+  background-size: cover;
+}
+
+.blacktext {
+  color: #000000;
+}

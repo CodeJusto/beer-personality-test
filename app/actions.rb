@@ -18,15 +18,17 @@ post '/user_name' do
   user = User.new(name: params[:user_name])
   user.save
   session[:user_id] = user.id 
-
   redirect '/quiz'
 end
 
 get '/quiz' do
   @question = Question.generate(current_user)
+  if @progress.nil?
+    @progress = 0
+  end
   if @question 
     @answers = @question.answers.all
-    # @progress += 1
+    @progress += 1
     erb :questionnaire
   else
     redirect '/generate_results'

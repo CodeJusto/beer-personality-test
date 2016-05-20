@@ -1,20 +1,15 @@
-.blue {
-  background-color: #0000FF;
-}
-
-.jumbo-image {
-  text-align:center;
-  margin:auto;
-}
-.homediv {
-  width:200px;
-}
-
-.background {
-  background-color: #000000;
-  background-size: cover;
-}
-
 .blacktext {
   color: #000000;
+}
+
+#background {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.shadow {
+  text-shadow: 5px 5px #000000;
 }

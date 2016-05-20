@@ -43,6 +43,6 @@ end
 get '/generate_results' do
   # @beer = find_by (ans_id: current_user.user_answers.answer_id)
   # Beer.joins(:user_answer,:answer, :user).where(:'user.id' => current_user.id)
-  Beer.joins(:user_answers, :answers, :users).where(users: {id: current_user.id})
-  erb '/result'
+  @beer = Beer.joins(:user_answers, :answers, :users).where(users: {id: current_user.id})
+  erb :result
 end

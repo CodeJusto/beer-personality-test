@@ -6,13 +6,12 @@ class InitialTableSetup < ActiveRecord::Migration
 
     create_table :questions do |t|
       t.string :q_text
-      t.integer :pre_req_ans   # nullable reference
+      t.integer :pre_req_ans   
     end
 
     create_table :user_answers do |t|
       t.references :user
       t.references :answer
-      # t.references :question   # Jeremy thinks this is horrible omg so bad
     end
 
     create_table :answers do |t|
@@ -28,7 +27,6 @@ class InitialTableSetup < ActiveRecord::Migration
       t.string :brew_name
       t.string :brew_add
       t.string :brew_img
-      # t.integer :ans_id  # reference
     end
   end
 end

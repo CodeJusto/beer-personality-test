@@ -4,6 +4,7 @@
 
 .question_background {
   background-color: #E0ECF8;
+  max-height:800px;
 }
 
 #background {
@@ -12,6 +13,11 @@
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+}
+
+.img-pretty {
+  border: 1px solid #000000;
+  border-radius: 2px;
 }
 
 .header-fix {

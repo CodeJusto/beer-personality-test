@@ -28,7 +28,7 @@ get '/quiz' do
   end
   if @question 
     @answers = @question.answers.all
-    @progress += 1
+    @progress = current_user.user_answers.count + 1
     erb :questionnaire
   else
     redirect '/generate_results'

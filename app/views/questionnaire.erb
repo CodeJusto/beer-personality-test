@@ -16,7 +16,7 @@
     </input>
     <% @answers.each do |answer| %>
       <div>
-        <input type="radio" name="option" value='<%=answer.id%>'>
+        <input required type="radio" name="option" value='<%=answer.id%>'>
           <%=answer.a_text%>
         </input>
       </div>

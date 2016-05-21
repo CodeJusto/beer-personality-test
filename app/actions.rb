@@ -59,6 +59,3 @@ post '/restart' do
   redirect '/home'
 end
 
-get '/Doormat' do
-  redirect '/Doormat'
-end

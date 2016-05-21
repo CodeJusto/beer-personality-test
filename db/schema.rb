@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160519200532) do
+ActiveRecord::Schema.define(version: 20160521003405) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "question_id"
@@ -26,12 +26,13 @@ ActiveRecord::Schema.define(version: 20160519200532) do
     t.string  "beer_img"
     t.string  "brew_name"
     t.string  "brew_add"
-    t.string  "brew_img"
+    t.string  "adj_image"
   end
 
   create_table "questions", force: :cascade do |t|
     t.string  "q_text"
     t.integer "pre_req_ans"
+    t.string  "q_image"
   end
 
   create_table "user_answers", force: :cascade do |t|

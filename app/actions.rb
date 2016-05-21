@@ -58,3 +58,7 @@ post '/restart' do
   session.clear
   redirect '/home'
 end
+
+get '/Doormat' do
+  redirect '/Doormat'
+end

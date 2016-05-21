@@ -28,7 +28,7 @@ class Question < ActiveRecord::Base
 
   def self.generate(user)
     @@user = user
-    if user.user_answers.count == 6
+    if user.user_answers.count == 10
       q = nil 
     else  
       loop do 

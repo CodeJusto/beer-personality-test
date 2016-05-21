@@ -1,89 +1,105 @@
-q1= Question.create(q_text: "What is your favourite type of chocolate", pre_req_ans: nil, q_image: "http://www.li-lacchocolates.com/thumbnail.asp?file=assets/images/gift%20boxes/chocolate-party-platter-web.jpg&maxx=482&maxy=0")
+#1
+Question.create(q_text: "What is your favourite type of chocolate?", pre_req_ans: nil, q_image: "https://ringlead-marketing-prod.s3.amazonaws.com/media/cms_media/chocolate.jpg")
+Answer.create(a_text: "White", question_id: 1)
 Answer.create(a_text: "Milk", question_id: 1)
 Answer.create(a_text: "Dark", question_id: 1)
-Answer.create(a_text: "White", question_id: 1)
-
-q2= Question.create(q_text: "What is your favourite coffee roast", pre_req_ans: nil, q_image: "https://authoritynutrition.com/wp-content/uploads/2016/01/coffee-beans-and-steaming-cup-facebook.jpg")
+#2
+Question.create(q_text: "What is your favourite coffee roast?", pre_req_ans: nil, q_image: "https://authoritynutrition.com/wp-content/uploads/2016/01/coffee-beans-and-steaming-cup-facebook.jpg")
 Answer.create(a_text: "Blonde", question_id: 2)
 Answer.create(a_text: "Medium", question_id: 2)
 Answer.create(a_text: "Dark", question_id: 2)
 
-q3= Question.create(q_text: "What is your favourite pizza Crust", pre_req_ans: nil, q_image: "http://jimmyspizzadudley.co/wp-content/uploads/2014/01/mmm-pizza-1024x768.jpg")
+#3
+Question.create(q_text: "How do you like your pizza crust?", pre_req_ans: nil, q_image: "http://www.989wolf.com/wp-content/uploads/2016/05/maxresdefault-1.jpg")
 Answer.create(a_text: "Thin", question_id: 3)
 Answer.create(a_text: "Thick", question_id: 3)
-Answer.create(a_text: "Cheese Crust", question_id: 3)
+Answer.create(a_text: "Filled with cheese!", question_id: 3)
 
-q4= Question.create(q_text: "What is your favourite Breakfast", pre_req_ans: nil, q_image: "http://www.snappytrend.com/wp-content/uploads/2015/04/IMG_6464-710x434.jpg")
+#4
+Question.create(q_text: "What is your perfect breakfast?", pre_req_ans: nil, q_image: "https://cdn0.vox-cdn.com/thumbor/q8y3m9RSYntyvjTJZZyy2sweq34=/0x607:7359x4746/1310x737/cdn0.vox-cdn.com/uploads/chorus_image/image/48815059/shutterstock_245938681.0.0.jpg")
 Answer.create(a_text: "Waffles", question_id: 4)
 Answer.create(a_text: "Pancakes", question_id: 4)
 Answer.create(a_text: "Bacon & Eggs", question_id: 4)
 
-q5= Question.create(q_text: "If you were a fruit, what would you be?", pre_req_ans: nil, q_image:"http://www.avasflowers.net/img/prod_img/avasflowers-bon-appetit-fruit-basket_max.jpg")
+#5
+Question.create(q_text: "If you were a fruit, what would you be?", pre_req_ans: nil, q_image:"http://netwallcraft.com/data/out/16/HQW_782349.jpg")
 Answer.create(a_text: "Grape", question_id: 5)
 Answer.create(a_text: "Apple", question_id: 5)
 Answer.create(a_text: "Starfruit", question_id: 5)
-Answer.create(a_text: "Banana", question_id: 5)
+Answer.create(a_text: "Lemon", question_id: 5)
 
-q6= Question.create(q_text: "What is your favourite scent?", pre_req_ans: nil, q_image:"http://www.femmehub.com/wp-content/uploads/2015/09/aromatherapy.jpg")
+#6
+Question.create(q_text: "What is your favourite scent?", pre_req_ans: nil, q_image:"http://science-all.com/images/smell/smell-01.jpg")
 Answer.create(a_text: "Clean", question_id: 6)
 Answer.create(a_text: "Floral", question_id: 6)
 Answer.create(a_text: "Tropical", question_id: 6)
-Answer.create(a_text: "Outdoor", question_id: 6)
+Answer.create(a_text: "Axe Deodorant", question_id: 6)
 
-q7= Question.create(q_text: "What would you do with a million dollars?", pre_req_ans: nil, q_image:"http://blog.wallstreetsurvivor.com/wp-content/uploads/The-Weeks-Lucky-Lottery-Winners.png")
-Answer.create(a_text: "Splurge on fancy things", question_id: 7)
-Answer.create(a_text: "Donate to Charity", question_id: 7)
-Answer.create(a_text: "Save", question_id: 7)
-Answer.create(a_text: "Invest", question_id: 7)
+#7
+Question.create(q_text: "What would you do with a million dollars?", pre_req_ans: nil, q_image:"http://skeptikai.com/wp-content/uploads/2012/10/Money-raining-from-the-sky.jpeg")
+Answer.create(a_text: "Put it into a savings account", question_id: 7)
+Answer.create(a_text: "Donate a part of it to charity", question_id: 7)
+Answer.create(a_text: "Quit Lighthouse Labs and explore the world", question_id: 7)
+Answer.create(a_text: "Buy a small apartment in downtown Vancouver", question_id: 7)
 
-pre_req_qn= Question.create(q_text:"What is your ideal vacation?", pre_req_ans: nil, q_image:"http://www.yalescientific.org/wp-content/uploads/2011/02/airplane-890x395.jpg")
-Answer.create(a_text: "Freezing in Alaska", question_id: 8)
-Answer.create(a_text: "Sun-bathing in Mexico", question_id: 8)
-Answer.create(a_text: "Exploring Asia", question_id: 8)
+#pre-req
+Question.create(q_text:"What is your ideal vacation?", pre_req_ans: nil, q_image:"http://mycargear.com/wp-content/uploads/Airplane-7.jpg")
+Answer.create(a_text: "A scenic Alaskan cruise", question_id: 8)
+Answer.create(a_text: "Sun-bathing (and heavily drinking) in Mexico", question_id: 8)
+Answer.create(a_text: "Backpacking across Europe", question_id: 8)
 
-b1q9= Question.create(q_text:"Favourite soda?", pre_req_ans: 25, q_image:"https://res.cloudinary.com/roadtrippers/image/upload/c_fill,h_316,w_520/v1386859384/soda-pop-central-52a9cb7646977756a60001ee.jpg")
-Answer.create(a_text: "Coke", question_id: 9)
-Answer.create(a_text: "Sprite", question_id: 9)
+#ale question first branch
+Question.create(q_text:"Are you an introvert or an extrovert?", pre_req_ans: 25, q_image:"http://www.thebusinesswomanmedia.com/wp-content/uploads/2014/09/Shy.jpg")
+Answer.create(a_text: "Introvert", question_id: 9)
+Answer.create(a_text: "Extrovert", question_id: 9)
 
-ale_detail_qn= Question.create(q_text:"If you were part of a movie production team, what would you do?", pre_req_ans: 28, q_image:"http://www.mestudios.com/wp-content/uploads/2014/12/commercial-set-e1417647692721.jpg")
-Answer.create(a_text: "Actor", question_id: 10)
-Answer.create(a_text: "Director", question_id: 10)
-Answer.create(a_text: "Camera man", question_id: 10)
-Answer.create(a_text: "Back-up Actor", question_id: 10)
+#ale detail 1
+Question.create(q_text:"You just got a minor promotion! How do you celebrate?", pre_req_ans: 28, q_image:"https://www.morganmckinley.com.au/sites/morganmckinley.com.au/files/styles/large/public/businessman%20choosing%20worker.jpg?itok=tcDO8rfh")
+Answer.create(a_text: "Buy myself a cake. Just for me. I deserve it.", question_id: 10)
+Answer.create(a_text: "Go home and sleep", question_id: 10)
+Answer.create(a_text: "Hit the gym", question_id: 10)
+Answer.create(a_text: "Only a 2% pay raise?! Complain to your superiors!", question_id: 10)
 
-ale_detail_qn2= Question.create(q_text:"Where would you get your coffee from?", pre_req_ans: 29, q_image:"http://www.luminationnetwork.com/wp-content/uploads/2012/09/coffee-lunch-6.jpg")
-Answer.create(a_text: "Parallel 49", question_id: 11)
-Answer.create(a_text: "Starbucks", question_id: 11)
-Answer.create(a_text: "Coffee Machine", question_id: 11)
+#ale detail 2
+Question.create(q_text:"What is your dream pet?", pre_req_ans: 29, q_image:"http://sledlink.com/wp-content/uploads/2016/04/1-1.jpg")
+Answer.create(a_text: "A grumpy cat... preferably with a mustache", question_id: 11)
+Answer.create(a_text: "Something expensive and high-maintenance so I can show it off", question_id: 11)
+Answer.create(a_text: "An alligator", question_id: 11)
 
-b2q12= Question.create(q_text: "Coffee or Tea?", pre_req_ans: 26, q_image:"http://thegogreenblog.com/wp-content/uploads/2010/08/coffee_versus_tea.jpg")
-Answer.create(a_text: "Coffee", question_id:12)
-Answer.create(a_text: "Tea", question_id:12)
+#lager question first branch
+Question.create(q_text: "Would you rather drive or commute?", pre_req_ans: 26, q_image:"http://ubyssey.ca/media/images/2015/10/Translink_20150615_Kosta-Prodanovic.jpg")
+Answer.create(a_text: "Drive", question_id:12)
+Answer.create(a_text: "Commute", question_id:12)
 
-lager_detail_qn= Question.create(q_text:"Favourite alcohol other than Beer", pre_req_ans: 37, q_image:"https://s-media-cache-ak0.pinimg.com/736x/d2/c6/8e/d2c68efc2b9376603c7177ab7e3b811c.jpg")
-Answer.create(a_text: "Cider", question_id: 13)
-Answer.create(a_text: "Vodka", question_id: 13)
-Answer.create(a_text: "Whiskey", question_id: 13)
+#lager detail 1
+Question.create(q_text:"A group member asks if you can do their work for them so they can slack off. How do you respond?", pre_req_ans: 37, q_image:"http://millo.co/wp-content/uploads/2013/11/signs-youre-a-design-slacker-graphic-design-blender.jpg")
+Answer.create(a_text: "Yes of course. Anything you want!", question_id: 13)
+Answer.create(a_text: "As long as you buy me a drink... or three", question_id: 13)
+Answer.create(a_text: "I don't have time for that! My part is more important!", question_id: 13)
 
-lager_detail_qn2= Question.create(q_text:"How many countries have you visited", pre_req_ans: 38, q_image:"http://cdn1.theodysseyonline.com/files/2016/01/26/635893802153804032-1517245842_travel_header.jpg")
-Answer.create(a_text: "One or Less", question_id: 14)
-Answer.create(a_text: "Two to Five", question_id: 14)
-Answer.create(a_text: "More than Five", question_id: 14)
+#lager detail 2
+Question.create(q_text:"What would you wish for?", pre_req_ans: 38, q_image:"http://vignette2.wikia.nocookie.net/disney/images/8/8b/Aladdin3192.jpg/revision/latest?cb=20140414000856")
+Answer.create(a_text: "Better looks", question_id: 14)
+Answer.create(a_text: "Whatever my friends/significant other/parents want", question_id: 14)
+Answer.create(a_text: "All the booze I can drink", question_id: 14)
 
-b3q15= Question.create(q_text: "Salt? or Pepper?", pre_req_ans: 27, q_image:"https://i.kinja-img.com/gawker-media/image/upload/s--5AXlq55L--/c_scale,fl_progressive,q_80,w_800/192l1ncf5l2yqjpg.jpg")
-Answer.create(a_text: "Salt", question_id: 15)
-Answer.create(a_text: "Pepper", question_id: 15)
+#Other question first branch
+Question.create(q_text: "Do you enjoy school more than work?", pre_req_ans: 27, q_image:"http://www.hercampus.com/sites/default/files/2016/04/17/graduating_1.jpg")
+Answer.create(a_text: "School is better", question_id: 15)
+Answer.create(a_text: "Work is better", question_id: 15)
 
-other_detail_qn= Question.create(q_text:"What do you do in your free time?", pre_req_ans: 45, q_image:"http://librodigital.oupe.es/eltdemos/core/imgs/wordlist/free_time_sp.jpg")
-Answer.create(a_text: "Party with a group of friends", question_id: 16)
-Answer.create(a_text: "Go to the gym", question_id: 16)
-Answer.create(a_text: "Stay at home with a book", question_id: 16)
+#other detail 1
+Question.create(q_text:"In a zombie apocalypse, what would your plan be?", pre_req_ans: 45, q_image:"https://cdn.shopify.com/s/files/1/0248/6858/products/Zombie_Invasion_screenshot_Zombie_Shadows_2048x2048.jpg?v=1377632215")
+Answer.create(a_text: "Try to escape the city", question_id: 16)
+Answer.create(a_text: "Lock yourself in at home and pretend it's all a dream", question_id: 16)
+Answer.create(a_text: "Lie down and accept your fate", question_id: 16)
 
-other_detail_qn2= Question.create(q_text:"Favourite Season?", pre_req_ans: 46, q_image:"http://i.imgur.com/g2ORiZi.jpg")
-Answer.create(a_text: "Summer", question_id: 17)
-Answer.create(a_text: "Autumn", question_id: 17)
-Answer.create(a_text: "Spring", question_id: 17)
-Answer.create(a_text: "Winter", question_id: 17)
+#other detail 1
+Question.create(q_text: "What is the best super power?", pre_req_ans: 46, q_image:"http://vignette1.wikia.nocookie.net/marveldatabase/images/e/e1/The_Marvel_Universe.png/revision/latest?cb=20110513164401")
+Answer.create(a_text: "Flight", question_id: 17)
+Answer.create(a_text: "Invisibility", question_id: 17)
+Answer.create(a_text: "Immortality", question_id: 17)
+Answer.create(a_text: "I just want to be like Deadpool.", question_id: 17)
 
 
 
@@ -112,7 +128,7 @@ Beer.create(
   answer_id: 32,
   name: "Wheats",
   adjective: "Bodybuilder",
-  description: "The most important thing to you is keeping your body-fat ratio down. You don't have many friends because you spend all your time working out and drinking protein shakes, bro.",
+  description: "The most important thing to you is working out and getting your macronutrients. You don't have many friends because you spend all your time working out and drinking protein shakes, bro.",
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-wheat.png",
   brew_name: "Big Rock Urban Brewery",
   brew_add: "310 W 4th Ave, Vancouver",

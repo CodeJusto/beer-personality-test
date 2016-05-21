@@ -1,61 +1,96 @@
-<!-- Page Content -->
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-  <!-- Portfolio Item Heading -->
-  <div class="row">
-      <div class="col-lg-12">
-          <h1 class="page-header"><%= current_user.name %> 
-              <small>the <%= @beer.adjective %></small>
-          </h1>
-      </div>
-  </div>
-  <!-- /.row -->
+  <title><h1>Results</h1></title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"                content="http://beer-personality-test.herokuapp.com/home" />
+  <meta property="og:type"               content="profile" />
+  <meta property="og:title"              content=<%= "My Beer Personality was: " + @beer.adjective %> />
+  <meta property="og:description"        content="Find your Inner Beer Personality" />
+  <meta property="og:image"              content="https://t1.ftcdn.net/jpg/00/87/32/50/240_F_87325027_PXBH2B65LYLlnwg3wcQPxoD8W3TsBT8Q.jpg" />
 
-    <!-- Portfolio Item Row -->
+
+  <link rel="stylesheet" href="/stylesheets/application.css">
+  
+
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/bootstrap/css/landing-page.css">
+  <link href="/bootstrap/css/modern-business.css" rel="stylesheet">
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/javascript/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+    <!-- Page Content -->
+  <div class="container">
+
+    <!-- Portfolio Item Heading -->
     <div class="row">
-
-      <div class="col-md-8">
-          <img class="img-responsive img-pretty" src="<%= @beer.adj_image %>" alt="">
-      </div>
-
-      <div class="col-md-4">
-          <h3>Your beer of choice is a <%= @beer.name %></h3>
-          <p><%= @beer.description %></p>
-         <!--  <h3>Project Details</h3> -->
-          <div>
-            <img class="beer_img" src="<%= @beer.beer_img %>">
-          </div>
-      </div>
-
+        <div class="col-lg-12">
+            <h1 class="page-header"><%= current_user.name %> 
+                <small>the <%= @beer.adjective %></small>
+            </h1>
+        </div>
     </div>
     <!-- /.row -->
-</div>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+            <img class="img-responsive img-pretty" src="<%= @beer.adj_image %>" alt="">
+        </div>
+
+        <div class="col-md-4">
+            <h3>Your beer of choice is a <%= @beer.name %></h3>
+            <p><%= @beer.description %></p>
+           <!--  <h3>Project Details</h3> -->
+            <div>
+              <img class="beer_img" src="<%= @beer.beer_img %>">
+            </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+  </div>
 
 
-<meta property="og:url"                content="http://beer-personality-test.herokuapp.com/home" />
-<meta property="og:type"               content="profile" />
-<meta property="og:title"              content=<%= "My Beer Personality was: " + @beer.adjective %> />
-<meta property="og:description"        content="Find your Inner Beer Personality" />
-<meta property="og:image"              content="https://t1.ftcdn.net/jpg/00/87/32/50/240_F_87325027_PXBH2B65LYLlnwg3wcQPxoD8W3TsBT8Q.jpg" />
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="center_align">
-  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="icon_link" data-mobile-iframe="true"></div>
-</div>
 
 
-<div class="center_align">
-  <br>
-  <form method="post" action='/restart'>
-      <input class="btn btn-primary btn-default" type="submit" value="Try Again?">
-    </div>
-  </form>
-</div>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="center_align">
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="icon_link" data-mobile-iframe="true"></div>
+  </div>
+
+
+  <div class="center_align">
+    <br>
+    <form method="post" action='/restart'>
+        <input class="btn btn-primary btn-default" type="submit" value="Try Again?">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

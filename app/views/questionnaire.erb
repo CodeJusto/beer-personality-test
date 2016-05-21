@@ -1,63 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
 
-<!-- Header Carousel -->
-<header id="myCarousel" class="carousel slide">
-    <div class="carousel-inner bottom-border">
-        <div class="item active">
-            <div class="fill" style="background-image:url('<%= @question.q_image %>');"></div>
-        </div>
-    </div>
-</header>
-
-<!-- Page Content -->
-<div class="question_background">
-  <div class="container">
 
 
-    <!-- Marketing Icons Section -->
-    <div class="row">
-          <!-- <div class="col-sm-5"></div> -->
-      <div class="col-lg-12">             
-        <div class="center_align_text">
-          <button type="button" class="btn btn-alert">
-            <h3 class="header-fix">Question  <span class="badge"><strong><%= @progress %></strong></span></h3>
-          </button> 
-        </div>
-        <div class="progress">  
-          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: <%=@progress * 10 %>%">
+  <link rel="stylesheet" href="/stylesheets/application.css">
+  
+
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/bootstrap/css/landing-page.css">
+  <link href="/bootstrap/css/modern-business.css" rel="stylesheet">
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/javascript/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <!-- Header Carousel -->
+  <header id="myCarousel" class="carousel slide">
+      <div class="carousel-inner bottom-border">
+          <div class="item active">
+              <div class="fill" style="background-image:url('<%= @question.q_image %>');"></div>
           </div>
-        </div>
-        <h2 class="page-header text-center">
-            <%= @question.q_text %>
-        </h2>
-      </div> 
-    </div>
-    <div class="row">
-      <div class="col-sm-5"></div>
-      <div class="center_align_text">
-        <div class="align-left">
-          <form method="post" action='/update_user_answers'>
-            <input type="hidden" name="q_id" value='<%=@question.id%>'>
-            </input>
-            <% @answers.each do |answer| %>
-              <div>
-                <input required type="radio" name="option" value='<%=answer.id%>'><label for="radio1"><strong><span><%=answer.a_text%></span></strong></label>
-                </input>
-              </div>
-            <% end %>
-            <br>
-        </div>
-        <div>
-            <input class="btn btn-primary btn-lg" type="submit" value="Submit">
-            </div>
-          </form>
       </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="question_background">
+    <div class="container">
+
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+            <!-- <div class="col-sm-5"></div> -->
+        <div class="col-lg-12">             
+          <div class="center_align_text">
+            <button type="button" class="btn btn-alert">
+              <h3 class="header-fix">Question  <span class="badge"><strong><%= @progress %></strong></span></h3>
+            </button> 
+          </div>
+          <div class="progress">  
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: <%=@progress * 10 %>%">
+            </div>
+          </div>
+          <h2 class="page-header text-center">
+              <%= @question.q_text %>
+          </h2>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="center_align_text">
+          <div class="align-left">
+            <form method="post" action='/update_user_answers'>
+              <input type="hidden" name="q_id" value='<%=@question.id%>'>
+              </input>
+              <% @answers.each do |answer| %>
+                <div>
+                  <input required type="radio" name="option" value='<%=answer.id%>'><label for="radio1"><strong><span><%=answer.a_text%></span></strong></label>
+                  </input>
+                </div>
+              <% end %>
+              <br>
+          </div>
+          <div>
+              <input class="btn btn-primary btn-lg" type="submit" value="Submit">
+              </div>
+            </form>
+        </div>
+      </div>
+    <!-- /.row -->
     </div>
-  <!-- /.row -->
+  <!-- /.container -->
   </div>
-<!-- /.container -->
-</div>
-</div>
+  </div>
+
+</body>
+</html>
+
+
+
 
 
 

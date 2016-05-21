@@ -53,3 +53,8 @@ get '/generate_results' do
   # binding.pry
   erb :result
 end
+
+post '/restart' do
+  session.clear
+  redirect '/home'
+end

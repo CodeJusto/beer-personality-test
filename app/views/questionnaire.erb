@@ -1,12 +1,16 @@
-<div class="row">
+
+
+<div class="center_align">
+  <h3> Question <%= @progress %></h3>
 </div>
 
 
-<div>
-    <h2> <%= @question.q_text %></h2>
+<div class="center_align">
+  <h1> <%= @question.q_text %></h1>
 </div>
 
-<div>
+<div class="center_align">
+  <h5>
   <form method="post" action='/update_user_answers'>
     <input type="hidden" name="q_id" value='<%=@question.id%>'>
     </input>
@@ -21,4 +25,17 @@
       <input class="input" type="submit" value="Submit">
     </div>
   </form>
+  </h5>
+</div>
+
+
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: <%=@progress * 15 %>%">
+    <span class="sr-only"><%=@progress * 15 %>% Complete</span>
+  </div>
+</div>
+
+<div class="center_align">
+  <img src="http://easy-motorradwerkstatt.de/images/3/homer-simpson-beer-quotes-i17.gif">
 </div>

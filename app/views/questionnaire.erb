@@ -1,43 +1,4 @@
 
-<!-- <div class="center_align">
-  <button type="button" class="btn btn-primary">
-    <h3> Question  <span class="badge"><%= @progress %></span></h3> 
-  </button> 
-</div>
-
-
-<div class="center_align">
-  <h1> <%= @question.q_text %></h1>
-</div>
-
-<div class="center_align">
-  <h4>
-  <form method="post" action='/update_user_answers'>
-    <input type="hidden" name="q_id" value='<%=@question.id%>'>
-    </input>
-    <% @answers.each do |answer| %>
-      <div>
-        <input required type="radio" name="option" value='<%=answer.id%>'>
-          <%=answer.a_text%>
-        </input>
-      </div>
-    <% end %>
-    <br>
-    <div>
-      <input class="input" type="submit" value="Submit">
-    </div>
-  </form>
-  </h4>
-</div> -->
-
-<!-- <div class="question_image">
-  <img src=<%= @question.q_image %> class=" img-rounded img-responsive">
-</div> -->
-
-
-
-
-<body>
 
 <!-- Header Carousel -->
 <header id="myCarousel" class="carousel slide">
@@ -80,7 +41,7 @@
             </input>
             <% @answers.each do |answer| %>
               <div>
-                <input required type="radio" name="radio" value='<%=answer.id%>'><label for="radio1"><strong><span><%=answer.a_text%></span></strong></label>
+                <input required type="radio" name="option" value='<%=answer.id%>'><label for="radio1"><strong><span><%=answer.a_text%></span></strong></label>
                 </input>
               </div>
             <% end %>

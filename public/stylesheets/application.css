@@ -4,7 +4,8 @@
 
 .question_background {
   background-color: #E0ECF8;
-  max-height:800px;
+  min-height:200px;
+  max-height:400px;
 }
 
 #background {
@@ -14,6 +15,10 @@
   -ms-filter: blur(5px);
   filter: blur(5px);
 }
+
+/*.background-color-change {
+  background-color: #E0ECF8;
+}*/
 
 .img-pretty {
   border: 1px solid #000000;
@@ -96,4 +101,16 @@ input[type=checkbox]:not(old):checked + label{
 
 input[type=radio]:not(old):checked + label{
   background-position : 0 -48px;
+}
+
+.footclass{
+  padding:20px;
+  margin: 0px;
+  background-color: #E0ECF8;
+}
+
+.page-header-gray {
+  padding-bottom: 9px;
+  padding-top: 9px;
+  border-bottom: 1px solid #848484;
 }

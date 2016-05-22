@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
   <!-- Header Carousel -->
   <header id="myCarousel" class="carousel slide">
       <div class="carousel-inner bottom-border">
@@ -11,6 +12,20 @@
   <!-- Page Content -->
   <div class="question_background">
     <div class="container">
+=======
+<!-- Header Carousel -->
+<header id="myCarousel" class="carousel slide">
+    <div class="carousel-inner bottom-border">
+        <div class="item active">
+            <div class="fill" style="background-image:url('<%= @question.q_image %>');"></div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="question_background">
+  <div class="container">
+>>>>>>> daa145a98fdb7f5904742ba92cdfee18ba7319d5
 
 
       <!-- Marketing Icons Section -->
@@ -46,8 +61,28 @@
               <% end %>
               <br>
           </div>
+<<<<<<< HEAD
           <div>
               <input class="btn btn-primary btn-lg" type="submit" value="Submit">
+=======
+        </div>
+        <h2 class="page-header-gray text-center">
+            <%= @question.q_text %>
+        </h2>
+      </div> 
+    </div>
+    <div class="row">
+      <div class="col-sm-5"></div>
+      <div class="center_align_text">
+        <div class="align-left">
+          <form method="post" action='/update_user_answers'>
+            <input type="hidden" name="q_id" value='<%=@question.id%>'>
+            </input>
+            <% @answers.each do |answer| %>
+              <div>
+                <input required type="radio" name="option" value='<%=answer.id%>'><label for="radio1"><strong><span><%=answer.a_text%></span></strong></label>
+                </input>
+>>>>>>> daa145a98fdb7f5904742ba92cdfee18ba7319d5
               </div>
             </form>
         </div>
@@ -57,6 +92,7 @@
   <!-- /.container -->
   </div>
   </div>
+<<<<<<< HEAD
 
 
 
@@ -64,3 +100,8 @@
 
 
 
+=======
+<!-- /.container -->
+</div>
+<div class="footclass"></div>
+>>>>>>> daa145a98fdb7f5904742ba92cdfee18ba7319d5

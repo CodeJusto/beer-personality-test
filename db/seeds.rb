@@ -78,7 +78,7 @@ Answer.create(a_text: "As long as you buy me a drink... or three", question_id: 
 Answer.create(a_text: "I don't have time for that! My part is more important!", question_id: 13)
 
 #lager detail 2
-Question.create(q_text:"What would you wish for?", pre_req_ans: 38, q_image:"http://vignette2.wikia.nocookie.net/disney/images/8/8b/Aladdin3192.jpg/revision/latest?cb=20140414000856")
+Question.create(q_text:"What would you wish for?", pre_req_ans: 38, q_image:"https://i.ytimg.com/vi/olh3PH6grEc/maxresdefault.jpg")
 Answer.create(a_text: "Better looks", question_id: 14)
 Answer.create(a_text: "Whatever my friends/significant other/parents want", question_id: 14)
 Answer.create(a_text: "All the booze I can drink", question_id: 14)
@@ -95,7 +95,7 @@ Answer.create(a_text: "Lock yourself in at home and pretend it's all a dream", q
 Answer.create(a_text: "Lie down and accept your fate", question_id: 16)
 
 #other detail 1
-Question.create(q_text: "What is the best super power?", pre_req_ans: 46, q_image:"http://vignette1.wikia.nocookie.net/marveldatabase/images/e/e1/The_Marvel_Universe.png/revision/latest?cb=20110513164401")
+Question.create(q_text: "What is the best super power?", pre_req_ans: 46, q_image:"http://i.stack.imgur.com/ubZ0S.jpg")
 Answer.create(a_text: "Flight", question_id: 17)
 Answer.create(a_text: "Invisibility", question_id: 17)
 Answer.create(a_text: "Immortality", question_id: 17)

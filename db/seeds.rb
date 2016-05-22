@@ -113,6 +113,7 @@ Beer.create(
   brew_name: "Dageraad",
   brew_add: "114, 3191 Thunderbird present, Burnaby",
   adj_image: "http://img07.deviantart.net/9e43/i/2015/125/b/c/lollipoppy_2_by_thromulus-d8s88f2.jpg"
+  twitter: 
   )
 Beer.create(
   answer_id: 31,
@@ -123,6 +124,7 @@ Beer.create(
   brew_name: "Brass neck Brewey",
   brew_add: "2148 Main Street Vancouver, BC",
   adj_image: "http://www.techweekeurope.co.uk/wp-content/uploads/2012/07/%C2%A9-Michael-Brown-Fotolia-Small.jpg"
+  twitter: 
   )
 Beer.create(
   answer_id: 32,
@@ -133,6 +135,7 @@ Beer.create(
   brew_name: "Big Rock Urban Brewery",
   brew_add: "310 W 4th Ave, Vancouver",
   adj_image: "http://fitnesssection.com/wp-content/uploads/2014/06/John-Cena.jpeg"
+  twitter: 
   )
 Beer.create(
   answer_id: 33,
@@ -143,6 +146,7 @@ Beer.create(
   brew_name: "Strange Fellows Brewing",
   brew_add: "1345 Clark Drive",
   adj_image: "http://images.parenting.mdpcdn.com/sites/parenting.com/files/styles/facebook_og_image/public/600_temper_tantrum_crying.jpg?itok=TyFVFWUs"
+  twitter: 
   )
 
 Beer.create(
@@ -154,7 +158,9 @@ Beer.create(
   brew_name: "Off the Rail Brewing Co.",
   brew_add: "1351 Adana Street, Vancouver",
   adj_image: "http://i.telegraph.co.uk/multimedia/archive/03046/hipster-tash_3046941b.jpg"
+  twitter: 
   )
+
 Beer.create(
   answer_id: 35,
   name: "Porters",
@@ -164,7 +170,9 @@ Beer.create(
   brew_name: "Powell Street Brewing Co.",
   brew_add: "1357 Powell Street, Vancouver",
   adj_image: "http://www.moneysuccesshappiness.com/wp-content/uploads/2012/05/ProudManPointingAtSelf.jpg"
+  twitter: 
   )
+
 Beer.create(
   answer_id: 36,
   name: "Stouts",
@@ -174,6 +182,7 @@ Beer.create(
   brew_name: "Postmark Brewing",
   brew_add: "55 Dunlevy Avenue, Vancouver",
   adj_image: "http://i.imgur.com/gi4wcAu.jpg"
+  twitter: 
   )
 
 Beer.create(
@@ -185,7 +194,9 @@ Beer.create(
   brew_name: "Parallel 49",
   brew_add: "1950 Triumph St, Vancouver",
   adj_image: "http://fromcaterpillarstobutterflies.com/wp-content/uploads/2015/10/My-Bully-Boss.jpg"
+  twitter: 
   )
+
 Beer.create(
   answer_id: 40,
   name: "Bocks",
@@ -195,7 +206,9 @@ Beer.create(
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
   adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg"
+  twitter: 
   )
+
 Beer.create(
   answer_id: 41,
   name: "Dark Lager",
@@ -205,7 +218,9 @@ Beer.create(
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
   adj_image: "http://33x5bs39d3jhnwvvr3uyk6zm.wpengine.netdna-cdn.com/wp-content/uploads/pix/2016/03/trump-divorcing-narcissist-873x491.jpg"
+  twitter: 
   )
+
 Beer.create(
   answer_id: 42,
   name: "Dark Lager",
@@ -215,7 +230,9 @@ Beer.create(
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
   adj_image: "http://33x5bs39d3jhnwvvr3uyk6zm.wpengine.netdna-cdn.com/wp-content/uploads/pix/2016/03/trump-divorcing-narcissist-873x491.jpg"
+  twitter: 
   )
+
 Beer.create(
   answer_id: 43,
   name: "Pale Lager",
@@ -225,7 +242,9 @@ Beer.create(
   brew_name: "Parallel 49",
   brew_add: "1950 Triumph St, Vancouver",
   adj_image: "http://fromcaterpillarstobutterflies.com/wp-content/uploads/2015/10/My-Bully-Boss.jpg"
+  twitter: 
   )
+
 Beer.create(
   answer_id: 44,
   name: "Bocks",
@@ -235,8 +254,8 @@ Beer.create(
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
   adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg" 
+  twitter: 
   )
-
 
 Beer.create(
   answer_id: 47,
@@ -247,6 +266,7 @@ Beer.create(
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
   adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
+  twitter: 
   )
 
 Beer.create(
@@ -258,6 +278,7 @@ Beer.create(
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
   adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
+  twitter: 
   )
 
 Beer.create(
@@ -269,6 +290,7 @@ Beer.create(
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
   adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
+  twitter: 
   )
 
 Beer.create(
@@ -280,6 +302,7 @@ Beer.create(
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
   adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
+  twitter: 
   )
 
 Beer.create(
@@ -291,6 +314,7 @@ Beer.create(
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
   adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
+  twitter: 
   )
 
 Beer.create(
@@ -302,6 +326,7 @@ Beer.create(
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
   adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
+  twitter: 
   )
 
 Beer.create(
@@ -313,6 +338,7 @@ Beer.create(
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
   adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
+  twitter: 
   )
 
 

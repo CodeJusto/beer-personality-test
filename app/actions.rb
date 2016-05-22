@@ -54,9 +54,6 @@ post '/restart' do
   redirect '/home'
 end
 
-get '/doormat' do
-  erb :doormat
-end
 
 get '/privacy_policy' do
   erb :privacy_policy

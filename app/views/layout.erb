@@ -2,13 +2,6 @@
 <html lang="en">
 <head>
   
-  <meta property="fb:app_id"        content="128032200945313" />
-  <meta property="og:url"           content="https://beer-personality-test.herokuapp.com/home" />
-  <meta property="og:type"          content="article" />
-  <meta property="og:title"         content= "Beer Personality Test" />
-  <meta property="og:description"   content="<%= @beer.twitter %>" />
-  <meta property="og:image"         content="https://t1.ftcdn.net/jpg/00/87/32/50/240_F_87325027_PXBH2B65LYLlnwg3wcQPxoD8W3TsBT8Q.jpg" />
-
   <link rel="stylesheet" href="/stylesheets/application.css">
   
 
@@ -21,16 +14,9 @@
   <script src="/javascript/application.js"></script>
 
   <title>Find Your Inner Beer</title>
-</head>
-<body>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=128032200945313";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
   <%= yield %>
+<!-- </head> -->
+
+
 </body>
 </html>

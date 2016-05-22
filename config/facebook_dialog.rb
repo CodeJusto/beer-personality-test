@@ -1,1 +1,0 @@
-FacebookDialog.api_key = "128032200945313"

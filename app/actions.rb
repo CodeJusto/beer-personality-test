@@ -58,3 +58,4 @@ post '/restart' do
   session.clear
   redirect '/home'
 end
+

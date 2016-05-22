@@ -46,7 +46,7 @@ Answer.create(a_text: "Buy a small apartment in downtown Vancouver", question_id
 Question.create(q_text:"What is your ideal vacation?", pre_req_ans: nil, q_image:"http://mycargear.com/wp-content/uploads/Airplane-7.jpg")
 Answer.create(a_text: "A scenic Alaskan cruise", question_id: 8)
 Answer.create(a_text: "Sun-bathing (and heavily drinking) in Mexico", question_id: 8)
-Answer.create(a_text: "Backpacking across Europe", question_id: 8)
+Answer.create(a_text: "I'd rather stay at home", question_id: 8)
 
 #ale question first branch
 Question.create(q_text:"Are you an introvert or an extrovert?", pre_req_ans: 25, q_image:"http://www.thebusinesswomanmedia.com/wp-content/uploads/2014/09/Shy.jpg")
@@ -205,7 +205,7 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-bock.png",
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
-  adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg",
+  adj_image: "https://brobible.files.wordpress.com/2015/11/most-impressive-feats-while-drunk.jpg?quality=90&w=640",
   twitter: "I'm a #TroubledAlcoholic!"
   )
 
@@ -253,7 +253,7 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-bock.png",
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
-  adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg",
+  adj_image: "https://brobible.files.wordpress.com/2015/11/most-impressive-feats-while-drunk.jpg?quality=90&w=640",
   twitter: "I'm a #TroubledAlcoholic!"
   )
 

@@ -112,8 +112,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-belgian.png",
   brew_name: "Dageraad",
   brew_add: "114, 3191 Thunderbird present, Burnaby",
-  adj_image: "http://img07.deviantart.net/9e43/i/2015/125/b/c/lollipoppy_2_by_thromulus-d8s88f2.jpg"
-  twitter: 
+  adj_image: "http://img07.deviantart.net/9e43/i/2015/125/b/c/lollipoppy_2_by_thromulus-d8s88f2.jpg",
+  twitter: "I'm a #CandyManiac! Find out your #BeerPersonality: "
   )
 Beer.create(
   answer_id: 31,
@@ -123,8 +123,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-pale.png",
   brew_name: "Brass neck Brewey",
   brew_add: "2148 Main Street Vancouver, BC",
-  adj_image: "http://www.techweekeurope.co.uk/wp-content/uploads/2012/07/%C2%A9-Michael-Brown-Fotolia-Small.jpg"
-  twitter: 
+  adj_image: "http://www.techweekeurope.co.uk/wp-content/uploads/2012/07/%C2%A9-Michael-Brown-Fotolia-Small.jpg",
+  twitter: "I'm #Vanilla!"
   )
 Beer.create(
   answer_id: 32,
@@ -134,8 +134,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-wheat.png",
   brew_name: "Big Rock Urban Brewery",
   brew_add: "310 W 4th Ave, Vancouver",
-  adj_image: "http://fitnesssection.com/wp-content/uploads/2014/06/John-Cena.jpeg"
-  twitter: 
+  adj_image: "http://fitnesssection.com/wp-content/uploads/2014/06/John-Cena.jpeg",
+  twitter: "I'm a #Bodybuilder!"
   )
 Beer.create(
   answer_id: 33,
@@ -145,8 +145,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-red.png",
   brew_name: "Strange Fellows Brewing",
   brew_add: "1345 Clark Drive",
-  adj_image: "http://images.parenting.mdpcdn.com/sites/parenting.com/files/styles/facebook_og_image/public/600_temper_tantrum_crying.jpg?itok=TyFVFWUs"
-  twitter: 
+  adj_image: "http://images.parenting.mdpcdn.com/sites/parenting.com/files/styles/facebook_og_image/public/600_temper_tantrum_crying.jpg?itok=TyFVFWUs",
+  twitter: "I'm a #SoreLoser!"
   )
 
 Beer.create(
@@ -157,8 +157,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-dark-wheat.png",
   brew_name: "Off the Rail Brewing Co.",
   brew_add: "1351 Adana Street, Vancouver",
-  adj_image: "http://i.telegraph.co.uk/multimedia/archive/03046/hipster-tash_3046941b.jpg"
-  twitter: 
+  adj_image: "http://i.telegraph.co.uk/multimedia/archive/03046/hipster-tash_3046941b.jpg",
+  twitter: "I'm a #Hipster!"
   )
 
 Beer.create(
@@ -169,8 +169,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-porter.png",
   brew_name: "Powell Street Brewing Co.",
   brew_add: "1357 Powell Street, Vancouver",
-  adj_image: "http://www.moneysuccesshappiness.com/wp-content/uploads/2012/05/ProudManPointingAtSelf.jpg"
-  twitter: 
+  adj_image: "http://queenbeeing.com/wp-content/uploads/2014/09/annoying-man.jpg",
+  twitter: "I'm #Annoying!"
   )
 
 Beer.create(
@@ -181,8 +181,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-stout.png",
   brew_name: "Postmark Brewing",
   brew_add: "55 Dunlevy Avenue, Vancouver",
-  adj_image: "http://i.imgur.com/gi4wcAu.jpg"
-  twitter: 
+  adj_image: "http://i.imgur.com/gi4wcAu.jpg",
+  twitter: "I'm a #Badass!"
   )
 
 Beer.create(
@@ -193,8 +193,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-other-glutenfree.png",
   brew_name: "Parallel 49",
   brew_add: "1950 Triumph St, Vancouver",
-  adj_image: "http://fromcaterpillarstobutterflies.com/wp-content/uploads/2015/10/My-Bully-Boss.jpg"
-  twitter: 
+  adj_image: "http://fromcaterpillarstobutterflies.com/wp-content/uploads/2015/10/My-Bully-Boss.jpg",
+  twitter: "I'm a #Doormat!"
   )
 
 Beer.create(
@@ -205,8 +205,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-bock.png",
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
-  adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg"
-  twitter: 
+  adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg",
+  twitter: "I'm a #TroubledAlcoholic!"
   )
 
 Beer.create(
@@ -217,8 +217,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-dark.png",
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
-  adj_image: "http://33x5bs39d3jhnwvvr3uyk6zm.wpengine.netdna-cdn.com/wp-content/uploads/pix/2016/03/trump-divorcing-narcissist-873x491.jpg"
-  twitter: 
+  adj_image: "http://33x5bs39d3jhnwvvr3uyk6zm.wpengine.netdna-cdn.com/wp-content/uploads/pix/2016/03/trump-divorcing-narcissist-873x491.jpg",
+  twitter: "I'm a #Narcissist!"
   )
 
 Beer.create(
@@ -229,8 +229,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-dark.png",
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
-  adj_image: "http://33x5bs39d3jhnwvvr3uyk6zm.wpengine.netdna-cdn.com/wp-content/uploads/pix/2016/03/trump-divorcing-narcissist-873x491.jpg"
-  twitter: 
+  adj_image: "http://33x5bs39d3jhnwvvr3uyk6zm.wpengine.netdna-cdn.com/wp-content/uploads/pix/2016/03/trump-divorcing-narcissist-873x491.jpg",
+  twitter: "I'm a #Narcissist! "
   )
 
 Beer.create(
@@ -241,8 +241,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-other-glutenfree.png",
   brew_name: "Parallel 49",
   brew_add: "1950 Triumph St, Vancouver",
-  adj_image: "http://fromcaterpillarstobutterflies.com/wp-content/uploads/2015/10/My-Bully-Boss.jpg"
-  twitter: 
+  adj_image: "http://fromcaterpillarstobutterflies.com/wp-content/uploads/2015/10/My-Bully-Boss.jpg",
+  twitter: "I'm a #Doormat!"
   )
 
 Beer.create(
@@ -253,8 +253,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/lager-beer-glass-bock.png",
   brew_name: "Steel & Oak Brewing Co.",
   brew_add: "1319 Third Avenue New Westminster",
-  adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg" 
-  twitter: 
+  adj_image: "http://2.media.collegehumor.cvcdn.com/42/18/962eb4cbc29ec6832c372d44b8474fcc.jpg",
+  twitter: "I'm a #TroubledAlcoholic!"
   )
 
 Beer.create(
@@ -265,8 +265,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-scottish-irish.png",
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
-  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
-  twitter: 
+  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg",
+  twitter: "I'm a #Madman!"
   )
 
 Beer.create(
@@ -277,8 +277,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-scottish-irish.png",
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
-  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
-  twitter: 
+  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg",
+  twitter: "I'm a #Madman!"
   )
 
 Beer.create(
@@ -289,8 +289,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-scottish-irish.png",
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
-  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
-  twitter: 
+  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg",
+  twitter: "I'm a #Madman!"
   )
 
 Beer.create(
@@ -301,8 +301,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-scottish-irish.png",
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
-  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
-  twitter: 
+  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg",
+  twitter: "I'm a #Madman!"
   )
 
 Beer.create(
@@ -313,8 +313,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-scottish-irish.png",
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
-  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
-  twitter: 
+  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg",
+  twitter: "I'm a #Madman!"
   )
 
 Beer.create(
@@ -325,8 +325,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-scottish-irish.png",
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
-  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
-  twitter: 
+  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg",
+  twitter: "I'm a #Madman!"
   )
 
 Beer.create(
@@ -337,8 +337,8 @@ Beer.create(
   beer_img: "http://bwb.quietlighttest.com/Recipes/Assets/Images/beer-images/ale-beer-glass-scottish-irish.png",
   brew_name: "Main Street Brewery",
   brew_add: "261 East 7th Avenue Vancouver",
-  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg"
-  twitter: 
+  adj_image: "https://nothinginbiology.files.wordpress.com/2015/10/doc.jpg",
+  twitter: "I'm a #Madman!"
   )
 
 

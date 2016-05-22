@@ -41,13 +41,11 @@ post '/update_user_answers' do
 end
 
 get '/generate_results' do
-  # super_user = current_user
   @beer = Beer.find_by("answer_id IN (SELECT b.answer_id FROM beers AS b 
                       INNER JOIN answers AS a ON b.answer_id=a.id 
                       INNER JOIN user_answers AS ua ON ua.answer_id=a.id
                       INNER JOIN users AS u ON ua.user_id=u.id
                       WHERE u.id=?)", current_user.id)
-  # binding.pry
   erb :result
 end
 

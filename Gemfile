@@ -1,6 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
+gem 'facebook_dialog'
 gem 'rake'
 gem 'activesupport'
 

@@ -1,9 +1,6 @@
 require_relative './helpers/helper'
 enable :sessions
 
-
-
-
 get '/' do
   redirect '/home'
 end

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-  <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <meta property="og:url"           content="https://beer-personality-test.herokuapp.com/" />
   <meta property="og:type"          content="Test type" />
   <meta property="og:title"         content="Test Title" />
   <meta property="og:description"   content="Test description" />
@@ -22,6 +22,14 @@
   <title>Find Your Inner Beer</title>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=128032200945313";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <%= yield %>
 </body>
 </html>

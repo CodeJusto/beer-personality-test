@@ -54,5 +54,9 @@ post '/restart' do
   redirect '/home'
 end
 
+get '/doormat' do
+  erb :doormat
+end
+
 
 

@@ -23,6 +23,18 @@
 .img-pretty {
   border: 1px solid #000000;
   border-radius: 2px;
+  max-height:640px;
+  max-width:400;
+}
+
+.beer_img {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    display: block;
+    max-height:200px;
 }
 
 .header-fix {

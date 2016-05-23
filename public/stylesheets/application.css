@@ -1,3 +1,4 @@
+
 .blacktext {
   color: #000000;
 }
@@ -6,6 +7,8 @@
   background-color: #E0ECF8;
   min-height:200px;
   max-height:400px;
+  height: 100%;
+  width: 100%;
 }
 
 #background {
@@ -114,12 +117,12 @@ input[type=checkbox]:not(old):checked + label{
 input[type=radio]:not(old):checked + label{
   background-position : 0 -48px;
 }
-
+/*
 .footclass{
   padding:40px;
   margin: 0px;
   background-color: #E0ECF8;
-}
+}*/
 
 .page-header-gray {
   padding-bottom: 9px;
